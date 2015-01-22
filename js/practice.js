@@ -1,7 +1,7 @@
 var count = 3;
 tool.fixedDistance = 100;
 
-// var layer = new Layer();
+var layer = new Layer();
 function onMouseMove(event) {
   var ellipse = new Path.Ellipse(10, 20, 200, 100);
   ellipse.fillColor = {
