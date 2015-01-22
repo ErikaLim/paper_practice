@@ -29,15 +29,13 @@ function onFrame(event) {
     // Move the item 1/20th of its width to the right. This way
     // larger circles move faster than smaller circles:
     item.position.x += item.bounds.width/20;
-    item.position.y += item.bounds.width/20;
+
     // If the item has left the view on the right, move it back
     // to the left:
     if (item.bounds.left > view.size.width) {
       item.position.x = -item.bounds.width;
     }
-    if (item.bounds.down > view.size.width) {
-      item.position.y = item.bounds.width;
-    }
+
   }
   path.fillColor.hue +=5;
 }
